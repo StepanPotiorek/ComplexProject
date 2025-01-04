@@ -1,7 +1,7 @@
 class TravelGuide {
     constructor() {
         this.menuIcon = document.querySelector(".menu-icon");
-        this.menuList = document.querySelector("nav");
+        this.menuList = document.querySelector("header nav");
         this.hamburgerIcon = document.querySelector(".fa-solid");
         this.images = document.querySelectorAll(".image-item img");
         this.imageInteraction();
@@ -25,16 +25,16 @@ class TravelGuide {
 
     // Toggle menu icon and visibility
     toggleMenu() {
-        if (this.hamburgerIcon.classList[1] === "fa-bars") {
-            this.hamburgerIcon.classList.add("fa-plane")
-            this.hamburgerIcon.classList.remove("fa-bars")
-            this.menuList.style.display = "block" 
-        } else {
-            this.hamburgerIcon.classList.add("fa-bars")
-            this.hamburgerIcon.classList.remove("fa-plane")
-            this.menuList.style.display = "none"  
-        }
-    }
+      if (this.hamburgerIcon.classList.contains("fa-bars")) {
+          this.hamburgerIcon.classList.add("fa-plane");
+          this.hamburgerIcon.classList.remove("fa-bars");
+          this.menuList.style.display = "block"; 
+      } else {
+          this.hamburgerIcon.classList.add("fa-bars");
+          this.hamburgerIcon.classList.remove("fa-plane");
+          this.menuList.style.display = "none";  
+      }
+  }
 
     // Dark mode settings
     darkMode() {
