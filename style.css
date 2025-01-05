@@ -59,6 +59,7 @@ nav li a {
   font-family: 'Dancing Script', cursive;
   text-shadow: #634646 1px 1px 2px;
   font-size: 20px;
+  margin: 0 10px;
 }
 
 nav a:hover {
