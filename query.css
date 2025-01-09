@@ -33,10 +33,6 @@
     margin-left: 20px;
 }
 
-  header nav.active {
-    display: block;
-  }
-
   .menu-icon {
     display: block;
     color: white;
@@ -136,6 +132,12 @@ nav ul li a:hover {
     line-height: 40px;
     bottom: 15px;
     right: 15px;
+  }
+}
+
+@media (min-width: 600px){
+  header nav {
+      display: block !important;       
   }
 }
 
