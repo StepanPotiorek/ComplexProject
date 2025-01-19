@@ -1,9 +1,11 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Dark Mode Styles */
 [data-theme='dark'] {
   --primary-color: rgb(247, 247, 247);
   --secondary-color: #d8d8d8;
@@ -30,15 +32,12 @@ header {
 
 
 .flag-icon img {
+  flex-grow: 1;
   width: 50px; 
   height: auto;
   border-radius: 5px;
   margin-left: 20px;
   margin-top: -10px;
-}
-
-header nav.active {
-  display: block;
 }
 
 /* Navigation Styles */
@@ -74,7 +73,7 @@ nav a:hover {
   margin-right: 30px;
   color: white;
 }
-
+/* Rounded switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -153,7 +152,7 @@ input:checked+.slider:before {
   color: #333;
 }
 
-/* Styly pro obrazky */
+/* Style for the images */
 
 .image-wrapper {
   display: flex;
@@ -191,7 +190,7 @@ input:checked+.slider:before {
   width: 70%;
 }
 
-/* Obecný styl formuláře */
+/* Form styles */
 .form-container {
   display: flex;
   align-items: center;
@@ -256,8 +255,9 @@ input:checked+.slider:before {
   margin-top: 5px;
 }
 
+/* Submit button */
 #registration-form button {
-  background: #ff7f50; /* Korálová barva */
+  background: #ff7f50; 
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -269,11 +269,11 @@ input:checked+.slider:before {
 }
 
 #registration-form button:hover {
-  background: #ff4500; /* Sytější korálová při hoveru */
+  background: #ff4500; 
 }
 
 #error-message, #email-error-message {
-  color: #e74c3c; /* Červená barva pro chyby */
+  color: #e74c3c; 
   font-size: 12px;
   margin-top: 5px;
   display: block;

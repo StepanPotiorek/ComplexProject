@@ -25,16 +25,16 @@ class TravelGuide {
 
     // Toggle menu icon and visibility
     toggleMenu() {
-        if (this.hamburgerIcon.classList.contains("fa-bars")) {
-            this.hamburgerIcon.classList.add("fa-plane")
-            this.hamburgerIcon.classList.remove("fa-bars")
-            this.menuList.style.display = "block" 
-        } else {
-            this.hamburgerIcon.classList.add("fa-bars")
-            this.hamburgerIcon.classList.remove("fa-plane")
-            this.menuList.style.display = "none"  
-        }
-    }
+    if (this.hamburgerIcon.classList.contains("fa-bars")) {
+      this.hamburgerIcon.classList.add("fa-plane");
+      this.hamburgerIcon.classList.remove("fa-bars");
+      this.menuList.style.display = "block"; 
+  } else {
+      this.hamburgerIcon.classList.add("fa-bars");
+      this.hamburgerIcon.classList.remove("fa-plane");
+      this.menuList.style.display = "none";  
+  }
+}
 
     // Dark mode settings
     darkMode() {
